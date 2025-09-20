@@ -1,22 +1,24 @@
 #include <stdio.h>
 
-#define MAX_PROD 3 
+#define MAX_PROD 4 
 #define MAX_SUB 3 
 #define MAX_CARRITO 30 
 
 
-char categorias[MAX_PROD][20] = {"Pizza", "Hamburguesa", "Bebida"};
+char categorias[MAX_PROD][20] = {"Pizza", "Hamburguesa", "Empanada","Bebida"};
 
 
 char subnombres[MAX_PROD][MAX_SUB][30] = {
     {"Pizza hawaiana", "Pizza Pollo con champiñones", "Pizza mexicana"},
     {"Hamburguesa Sencilla", "Hamburguesa Doble", "Hamburguesa mixta"},
+    {"Empanada pequeña","Empanada mediana","Maxi Empanada"},
     {"Limonada", "Jugo Natural", "Agua"}
 };
 
 float subprecios[MAX_PROD][MAX_SUB] = {
-    {25000, 26000, 28000},
+    {7500, 8000, 9000},
     {18000, 22000, 25000},
+    {4000,8500,18000},
     {5000, 7000, 4000}
 };
 
